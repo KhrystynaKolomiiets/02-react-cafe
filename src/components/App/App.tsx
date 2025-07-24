@@ -4,7 +4,7 @@ import CafeInfo from "../CafeInfo/CafeInfo";
 import css from "./App.module.css";
 import VoteOptions from "../VoteOptions/VoteOptions";
 import { type Vote } from "../../types/votes";
-import VoteStatus from "../VoteStatus/VoteStatus";
+import VoteStats from "../VoteStats/VoteStats";
 import Notification from "../Notification/Notification";
 export default function App() {
   const defaultVotes: Vote = {
@@ -37,7 +37,7 @@ export default function App() {
         />
       )}
       {totalVotes > 0 ? (
-        <VoteStatus
+        <VoteStats
           votes={votes}
           totalVotes={totalVotes}
           positiveRate={positiveRate}
